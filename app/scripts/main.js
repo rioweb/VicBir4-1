@@ -42,7 +42,7 @@ if (window.matchMedia('(min-width: 800px)').matches) {
   var hash = $(this).find('li.active a').attr('href');
   if(hash !== '#inicio') {
       $('header nav').removeClass('hidden');
-      $('header nav').fadeIn('slow').addClass('visible');
+      $('header nav').fadeIn(600).addClass('visible');
       $('.go-top').removeClass('hidden');
   }else{
       $('header nav').fadeOut('slow').removeClass('visible');
@@ -54,7 +54,7 @@ if (window.matchMedia('(min-width: 800px)').matches) {
     var hasho = $(this).find('li.active a').attr('href');
     if(hasho !== '#inicio') {
       $('header nav').removeClass('hidden');
-      $('header nav').fadeIn(400).addClass('visible');
+      $('header nav').fadeIn(600).addClass('visible');
       $('.go-top').removeClass('hidden');
   } else {
       $('header nav').fadeOut('slow').removeClass('visible');
@@ -69,7 +69,7 @@ if (window.matchMedia('(min-width: 800px)').matches) {
   element: document.getElementById('waypoint1'),
       handler: function() {
 
-        $('.empresa,.empresa2,.empresa3').addClass('active');
+        $('.card1,.card2,.card3').addClass('active');
       }
   });
 
