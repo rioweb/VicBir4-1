@@ -15,21 +15,7 @@ if(window.matchMedia('(max-width: 480px)').matches) {
   $('.fullheight').css('height', weight);
   
 };
-$(function(){
-  
-    $('a[href*= "#" ]:not([href= "#" ])').click(function() {
-    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-        var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				if(target.length){
-					$('html,body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
-	});
+
 
   var topoffset = 50;
 	$('body').scrollspy({
@@ -65,13 +51,6 @@ if (window.matchMedia('(min-width: 800px)').matches) {
 }else{
       $('header nav').removeClass('hidden');
 }
-  var waypoint = new Waypoint({
-  element: document.getElementById('waypoint1'),
-      handler: function() {
-
-        $('.card1,.card2,.card3').addClass('active');
-      }
-  });
 
   /* exported waypoint */
   $('#carousel-example-generic').carousel({
@@ -136,5 +115,8 @@ $(window).load(function() {
   $('#bar').width(600);
   $('.loader').fadeOut(3000);
 });
-
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
 $(document).ready(main);

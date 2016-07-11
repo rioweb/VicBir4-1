@@ -23,26 +23,10 @@
   max-width: 930px;
 }
 .section{
-  padding: 80px 0px;
+  margin: 35px 0px;
     position: relative;
 }
 
-#inicio {
-    background-image: url(../images/portada.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
-}
-
-#parallax1{
-  background: url(../images/portadax.jpg) fixed; 
-  height: 300px; 
-  position: relative;
-  margin: 0 auto;
-  padding: 5%;
-  background-size: cover; 
-}
 /*** Nav ***/
 .navbar{
   padding-top: 5px;
@@ -133,6 +117,16 @@
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important;
   
 }
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+ text-align: center;
+  background-color: #FF5722;
+  color: white;
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important;
+   
+}
+link a{
+  width: 100%;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -140,71 +134,10 @@
 .heading{
   border-bottom: 3px solid #FF5722;
 }
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+/*** ***/
+.portfolio-item{
+  margin-bottom: 20px;
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-
-.marketing p + h4 {
-  margin-top: 28px;
-}
-#quiensoy{
-  margin-top: 40px;
-}
-#quiensoy .row{
-  padding: 60px 0px;
-}
-#redonda{
-  max-height: 300px;
-}
-/******* Contacto ******/
-#d{
-  background-color: #FF5722;
-  width: 100%;
-  height: 400px;
-  bottom: 0px;
-  margin-bottom: 0px;
-}
-#d .container-fluid .heading{
-  color: white;
-  border-bottom: 3px solid white;
-}
-.conta{
-  padding: 40px 0px;
-    position: relative;
-}
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -231,3 +164,11 @@
 }
 
 
+@media screen and (min-width: 992px) {
+  .portfolio-item{
+    max-height: 125px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

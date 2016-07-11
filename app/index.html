@@ -58,7 +58,6 @@
               <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#inicio">Inicio</a></li>
                   <li><a href="#quiensoy">Quien soy</a></li>
-                  <li><a href="http://www.victoriabirchner.com.ar/fotos">Fotos</a></li>
                   <li><a href="#b">Novedades</a></li>
                   <li><a href="#d">Contacto</a></li>
               </ul>
@@ -88,12 +87,11 @@
 </div>
       
         <div id="waypoint1"></div>
-      <div class="section" id="b">
           <div id="parallax1"></div>
 
       </div>
       
-      <div class="section" id="c">
+      <div class="section" id="b">
         <div class="container-fluid">
           <h1 class="heading">Novedades</h1>
           <div class="row">
@@ -117,17 +115,43 @@
               <div class="card card3">
                 <h2>Fotos</h2>     
                 <img src="images/7.jpg" class="img-responsive cardimg">
-                <button class="btn link" type="button">Ver mas</button>
+                <button class="btn link" type="button"><a href="/fotos">Ver mas</a></button>
               </div>
             </div>
           </div>
         </div>
       </div>
       
-      <div class="section" id="d">
+      <div class="section conta" id="d">
         <div class="container-fluid">
           <h1 class="heading">Contacto</h1>
+          <div class="row">
+            <div class="col-md-6">
 
+                 <form action="send.php" method="post" class="form">
+            
+                    <div class="form-group">
+                    <input name="nombre" class="form-control" id="nombre" type="text" placeholder="Nombre:"></div>
+
+                    <div class="form-group">
+                    <input name="email" class="form-control" id="e-mail" type="text" placeholder="E-mail:"></div>
+
+                    <div class="form-group">
+                    <input name="telefono" class="form-control" id="telefono" type="text" placeholder="Teléfono:"></div>
+                    
+
+                <div class="form-group" style="align:right">
+                <textarea name="comentario" class="form-control" rows="3" id="comentario" placeholder="Comentario:"></textarea></div>
+                    
+                     
+                        
+                        <button type="submit" class="btn btn-primary bc">Enviar</button>
+          </div>        
+        </form>
+
+              </div>
+              <div class="col-md-6"></div>
+          </div>
         </div>
       </div>
             
