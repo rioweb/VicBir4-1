@@ -10,6 +10,18 @@ $('.nav li, .nav li a').click(function (e) {
 		$('ul.nav > li').removeClass('active');
             $(this).addClass('active');
 });
+    
+function changePage(event) {
+    if($(event.target).hasClass('external')) {
+        window.location.href = $(event.target).attr('href');
+        return;
+    }
+    //...
+}
+$(function () {
+    $('.nav li').click( changePage );
+});
+    
 if(window.matchMedia('(max-width: 480px)').matches) {
   var weight = $(window).height();
   $('.fullheight').css('height', weight);
