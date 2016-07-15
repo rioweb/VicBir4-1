@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,100italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600italic' rel='stylesheet' type='text/css'>
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -42,37 +42,35 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
-    <nav class="navbar navbar-default navbar-fixed-top hidden">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#inicio">Victoria Birchner</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#inicio">Inicio</a></li>
-                  <li><a href="#quiensoy">Quien soy</a></li>
-                  <li><a href="#fotos">Fotos</a></li>
-                  <li><a href="#videos">Videos</a></li>
-                  <li><a href="#d">Contacto</a></li>
-              </ul>
-          </div><!-- /.nav-collapse  -->
+    
+      <div id="barraizq">
+        <nav>
+        <div class="ulder" id="navbar">
+           <ul class="nav">
+            <li><a href="#parallaxportada"><div class="barraitem"></div></a></li>
+            <li><a href="#quiensoy" class="active"><div class="barraitem"></div></a></li>
+            <li><a href="#fotos"><div class="barraitem"></div></a></li>
+            <li><a href="#videos"><div class="barraitem"></div></a></li>
+            <li><a href="#d"><div class="barraitem"></div></a></li>
+          </ul>
+          
         </div>
-
-    </nav>
-     </header> 
-      <div id="inicio">
-      
+        </nav>
+      </div>
+      <div id="barrader">
+        <div class="ulder">
+        <ul>
+            <li>F</li>
+            <li>I</li>
+          </ul>
+          </div>
+      </div>
+      <div id="parallaxportada">
+        
       </div>
       
       <div class="section" id="quiensoy">
-        <div class="container-fluid">
+        <div class="container">
         <h1 class="heading">Quien soy</h1>        
         <div class="row">
         <div class="col-md-8">
@@ -92,17 +90,46 @@
 
       </div>
       <div class="section" id="fotos">
-        <div class="container-fluid"  style="position:relative;">
+        <div class="container">
+          <div class="row">
 
-        <h1 class="heading">Fotos</h1> 
-              <div class="row">
+            <h1 class="heading">Ultimas Fotos</h1>
+          </div> 
+        </div>
+        <div id="fotosdiv">
 
-            
+         <div class="row">
 
+          <div class="col-md-4"></div>
+
+          <div class="col-md-4">
+            <figure>
+              <img src="images/3.jpg" class="img-responsive gale" />
+              <figcaption><p>Test message</p></figcaption>
+            </figure>
+          </div>  
+          <div class="col-md-4">
+            <figure>
+              <img src="images/4.jpg" class="img-responsive gale" />
+              <figcaption><p>Test message</p></figcaption>
+            </figure>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="col-md-4"></div>
+
+          <div class="col-md-4"></div>
+
+          <div class="col-md-4">
+            <figure>
+              <img src="images/5.jpg" class="img-responsive gale" />
+              <figcaption><p>Test message</p></figcaption>
+            </figure>  
+          </div>
 
         <a href="/fotos">
-                <button class="btn link" type="button">Ver mas</button>        
-                </a>
+          <button class="btn link" type="button">Ver mas</button>        
+        </a>
 
           </div>
         </div>
@@ -120,7 +147,7 @@
       </div>
       
       <div class="section conta" id="d">
-        <div class="container-fluid">
+        <div class="container">
           <h1 class="heading">Contacto</h1>
           <div class="row">
 
