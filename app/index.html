@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik:400,500italic' rel='stylesheet' type='text/css'>
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -18,6 +18,8 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+
+    <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -38,24 +40,53 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body data-spy="scroll" >
+  <body data-spy="scroll">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
       <div id="barraizq">
-        <nav>
-        <div class="ulder" id="navbar">
-           <ul class="nav">
-            <li><a href="#parallaxportada"><div class="barraitem"></div></a></li>
-            <li><a href="#quiensoy" class="active"><div class="barraitem"></div></a></li>
-            <li><a href="#fotos"><div class="barraitem"></div></a></li>
-            <li><a href="#videos"><div class="barraitem"></div></a></li>
-            <li><a href="#d"><div class="barraitem"></div></a></li>
-          </ul>
+        
+      <header>
+    <nav class="navbar navbar-default">
           
-        </div>
-        </nav>
+          <div id="navbar">
+              <ul class="nav navbar-nav">
+            <li class="active"><a href="#parallaxportada">
+
+              <div class="itemout">
+                <div class="barraitem"></div>
+              </div>
+            </a></li>
+              
+            <li><a href="#quiensoy">
+
+              <div class="itemout">
+              <div class="barraitem"></div>
+              </div>
+            </a></li>
+            <li><a href="#fotos">
+
+              <div class="itemout">
+              <div class="barraitem"></div>
+              </div>
+            </a></li>
+            <li><a href="#videos">
+
+              <div class="itemout">
+              <div class="barraitem"></div>
+              </div>
+            </a></li>
+            <li><a href="#d">
+              <div class="itemout">
+              <div class="barraitem"></div>
+              </div>
+            </a></li>
+              </ul>
+          </div><!-- /.nav-collapse  -->
+        
+    </nav>
+    </header>
       </div>
       <div id="barrader">
         <div class="ulder">
@@ -70,7 +101,7 @@
       </div>
       
       <div class="section" id="quiensoy">
-        <div class="container">
+        <div class="container-fluid">
         <h1 class="heading">Quien soy</h1>        
         <div class="row">
         <div class="col-md-8">
@@ -90,13 +121,14 @@
 
       </div>
       <div class="section" id="fotos">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
 
             <h1 class="heading">Ultimas Fotos</h1>
           </div> 
         </div>
         <div id="fotosdiv">
+          <div class="container-fluid">
 
          <div class="row">
 
@@ -133,6 +165,7 @@
 
           </div>
         </div>
+        </div>
       </div>
 
       <div class="section" id="videos">
@@ -146,12 +179,13 @@
         </div>
       </div>
       
-      <div class="section conta" id="d">
-        <div class="container">
-          <h1 class="heading">Contacto</h1>
-          <div class="row">
+      <div class="section conta">
+        <div class="container-fluid">
 
-              <div class="col-md-6"></div>
+          <h1 class="heading">Contacto</h1>
+          <div class="row" id="d">
+
+              <div class="col-md-3 hidden-xs"></div>
             <div class="col-md-6">
 
                  <form action="send.php" method="post" class="form">
@@ -166,14 +200,16 @@
                     <input name="telefono" class="form-control" id="telefono" type="text" placeholder="Teléfono:"></div>
                     
 
-                <div class="form-group" style="align:right">
+                <div class="form-group">
                 <textarea name="comentario" class="form-control" rows="3" id="comentario" placeholder="Comentario:"></textarea></div>
-                    
-                     
-                        
-                        <button type="submit" class="btn btn-primary bc">Enviar</button>
-          </div>        
-        </form>
+          
+          <button type="submit" class="btn btn-primary bc">Enviar
+          </button>
+          </form>
+          </div>  
+
+              <div class="col-md-3 hidden-xs"></div>      
+        
 
               </div>
           </div>

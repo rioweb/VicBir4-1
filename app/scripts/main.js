@@ -9,7 +9,9 @@ $('.nav li, .nav li a').click(function (e) {
 		e.preventDefault();
 		$('ul.nav > li').removeClass('active');
             $(this).addClass('active');
+
 });
+
 if(window.matchMedia('(max-width: 480px)').matches) {
   var weight = $(window).height();
   $('.fullheight').css('height', weight);
@@ -31,7 +33,7 @@ $(function(){
 		});
 	});
 
-  var topoffset = 50;
+  var topoffset = 35;
 	$('body').scrollspy({
 		target: 'header .navbar',
 		offset: topoffset
